@@ -1,0 +1,83 @@
+.page-sport-detail .sport-detail-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+.page-sport-detail .sport-card {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+.page-sport-detail .sport-title {
+        margin: 0 0 25px;
+        font-size: 36px;
+        color: #1f2937;
+        line-height: 1.2;
+    }
+.page-sport-detail .sport-image {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+.page-sport-detail .sport-content {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #4b5563;
+        margin-bottom: 35px;
+        overflow-wrap: break-word;
+    }
+.page-sport-detail .sport-actions {
+        display: flex;
+        gap: 12px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+    }
+.page-sport-detail .back-button {
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #1f2937;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.2s;
+    }
+.page-sport-detail .back-button:hover {
+        background-color: #374151;
+    }
+.page-sport-detail .edit-button {
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.2s;
+    }
+.page-sport-detail .edit-button:hover {
+        background-color: #0056b3;
+    }
+.page-sport-detail .no-image {
+        background-color: #f3f4f6;
+        padding: 50px;
+        text-align: center;
+        border-radius: 10px;
+        color: #6b7280;
+        margin-bottom: 30px;
+    }
+@media (max-width: 600px) {
+.page-sport-detail .sport-detail-container {
+            margin: 25px auto;
+        }
+.page-sport-detail .sport-card {
+            padding: 25px;
+        }
+.page-sport-detail .sport-title {
+            font-size: 28px;
+        }
+.page-sport-detail .sport-content {
+            font-size: 16px;
+        }
+    }

@@ -1,0 +1,41 @@
+.page-home .hero {
+        text-align: center;
+        padding: 120px 20px;
+    }
+.page-home .hero h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+.page-home .hero p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 35px;
+    }
+.page-home .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+.page-home .btn {
+        display: inline-block;
+        padding: 12px 25px;
+
+        text-decoration: none;
+        border-radius: 5px;
+
+        font-size: 16px;
+    }
+.page-home .signin {
+        background: #007bff;
+        color: white;
+    }
+.page-home .signup {
+        background: #28a745;
+        color: white;
+    }
+.page-home .signin:hover {
+        background: #0056b3;
+    }
+.page-home .signup:hover {
+        background: #218838;
+    }

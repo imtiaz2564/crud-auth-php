@@ -1,0 +1,103 @@
+.page-sport-edit .back-button {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #6c757d;
+        }
+.page-sport-edit .back-button:hover {
+            background-color: #5a6268;
+        }
+.page-sport-edit .container {
+            width: 90%;
+            max-width: 650px;
+            margin: 50px auto;
+        }
+.page-sport-edit .edit-card {
+            background-color: white;
+            padding: 30px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+.page-sport-edit .edit-card h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+.page-sport-edit .form-group {
+            margin-bottom: 20px;
+        }
+.page-sport-edit .sport-image {
+            display: block;
+            max-width: 100%;
+            max-height: 320px;
+            height: auto;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+        }
+.page-sport-edit .no-image {
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+.page-sport-edit label {
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-weight: bold;
+        }
+.page-sport-edit input[type="text"],
+.page-sport-edit textarea {
+            width: 100%;
+
+            padding: 12px;
+
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+.page-sport-edit input[type="text"]:focus,
+.page-sport-edit textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+.page-sport-edit textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+.page-sport-edit .button-container {
+            display: flex;
+            gap: 10px;
+        }
+.page-sport-edit .update-button {
+            background-color: #007bff;
+            color: white;
+
+            border: none;
+            border-radius: 5px;
+
+            padding: 10px 18px;
+
+            font-size: 15px;
+            cursor: pointer;
+        }
+.page-sport-edit .update-button:hover {
+            background-color: #0056b3;
+        }
+.page-sport-edit .cancel-button {
+            background-color: #6c757d;
+            color: white;
+
+            padding: 10px 18px;
+
+            text-decoration: none;
+            border-radius: 5px;
+
+            font-size: 15px;
+        }
+.page-sport-edit .cancel-button:hover {
+            background-color: #5a6268;
+        }
