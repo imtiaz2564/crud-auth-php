@@ -1,134 +1,230 @@
 .page-sport-dashboard .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: 40px auto;
-    }
+    width: min(100% - 40px, 1160px);
+    margin: 40px auto 58px;
+}
+
 .page-sport-dashboard .dashboard-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 25px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--ink);
+}
+
 .page-sport-dashboard .dashboard-header h2 {
-        margin: 0;
-    }
+    margin: 0;
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
 .page-sport-dashboard .add-button {
-        background-color: #007bff;
-        color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 16px;
+    border: 1px solid var(--field);
+    border-radius: var(--radius);
+    background-color: var(--field);
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(25, 92, 67, 0.18);
+    transition: background-color 0.18s ease, transform 0.18s ease;
+}
 
-        padding: 10px 18px;
-
-        text-decoration: none;
-        border-radius: 5px;
-    }
 .page-sport-dashboard .add-button:hover {
-        background-color: #0056b3;
-    }
+    background-color: var(--field-dark);
+    transform: translateY(-1px);
+}
+
 .page-sport-dashboard .table-container {
-        background-color: white;
+    overflow-x: auto;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    box-shadow: var(--shadow-soft);
+}
 
-        border-radius: 8px;
-        overflow: hidden;
-
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
 .page-sport-dashboard table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+    width: 100%;
+    min-width: 780px;
+    border-collapse: collapse;
+}
+
 .page-sport-dashboard th {
-        background-color: #e9ecef;
-        text-align: left;
-    }
+    background:
+        linear-gradient(180deg, rgba(25, 92, 67, 0.08), rgba(25, 92, 67, 0.03)),
+        var(--surface-subtle);
+    color: var(--ink-soft);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 .page-sport-dashboard th,
 .page-sport-dashboard td {
-        padding: 15px;
-        border-bottom: 1px solid #ddd;
-    }
+    padding: 15px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+}
+
+.page-sport-dashboard td {
+    color: var(--ink-soft);
+}
+
+.page-sport-dashboard td:nth-child(1) {
+    width: 76px;
+    color: var(--muted);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+}
+
+.page-sport-dashboard td:nth-child(2) {
+    width: 25%;
+    color: var(--ink);
+    font-weight: 800;
+}
+
+.page-sport-dashboard td:nth-child(3) {
+    max-width: 480px;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
 .page-sport-dashboard tr:last-child td {
-        border-bottom: none;
-    }
-.page-sport-dashboard tr:hover {
-        background-color: #f8f9fa;
-    }
+    border-bottom: none;
+}
+
+.page-sport-dashboard tbody tr {
+    transition: background-color 0.18s ease;
+}
+
+.page-sport-dashboard tbody tr:hover {
+    background-color: #fbf7ee;
+}
+
 .page-sport-dashboard .actions {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .page-sport-dashboard .delete-form {
-        margin: 0;
-        padding: 0;
-    }
+    margin: 0;
+    padding: 0;
+}
+
 .page-sport-dashboard .action-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 7px 11px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
 
-        padding: 6px 10px;
-
-        border: none;
-        border-radius: 4px;
-
-        text-decoration: none;
-
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        line-height: 1.2;
-
-        cursor: pointer;
-    }
 .page-sport-dashboard .view-button {
-        background-color: #17a2b8;
-        color: white;
-    }
+    color: var(--field-dark);
+}
+
 .page-sport-dashboard .edit-button {
-        background-color: #ffc107;
-        color: #212529;
-    }
+    color: var(--gold);
+}
+
 .page-sport-dashboard .delete-button {
-        background-color: #dc3545;
-        color: white;
-    }
+    color: var(--danger);
+}
+
 .page-sport-dashboard .view-button:hover {
-        background-color: #138496;
-    }
+    background-color: var(--field-soft);
+    border-color: rgba(25, 92, 67, 0.34);
+}
+
 .page-sport-dashboard .edit-button:hover {
-        background-color: #e0a800;
-    }
+    background-color: #fff4dd;
+    border-color: #dfbd78;
+}
+
 .page-sport-dashboard .delete-button:hover {
-        background-color: #c82333;
-    }
+    background-color: var(--danger-soft);
+    border-color: #e4aaa2;
+}
+
 .page-sport-dashboard .empty-message {
-        text-align: center;
-        padding: 30px;
-        color: #777;
-    }
+    padding: 44px 24px;
+    color: var(--muted);
+    text-align: center;
+}
+
 .page-sport-dashboard .pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
 
-        gap: 8px;
-
-        margin-top: 25px;
-    }
 .page-sport-dashboard .pagination a {
-        padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 38px;
+    padding: 8px 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    color: var(--ink-soft);
+    font-weight: 800;
+    text-decoration: none;
+    transition: background-color 0.18s ease, border-color 0.18s ease;
+}
 
-        background-color: white;
-        color: #333;
-
-        border: 1px solid #ddd;
-        border-radius: 4px;
-
-        text-decoration: none;
-    }
 .page-sport-dashboard .pagination a:hover {
-        background-color: #e9ecef;
-    }
+    background-color: var(--field-soft);
+    border-color: rgba(25, 92, 67, 0.34);
+}
+
 .page-sport-dashboard .pagination a.active {
-        background-color: #007bff;
-        color: white;
-        border-color: #007bff;
+    background-color: var(--field);
+    color: #ffffff;
+    border-color: var(--field);
+}
+
+@media (max-width: 640px) {
+    .page-sport-dashboard .container {
+        width: min(100% - 28px, 1160px);
+        margin-top: 28px;
     }
+
+    .page-sport-dashboard .dashboard-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .page-sport-dashboard .dashboard-header h2 {
+        font-size: 30px;
+    }
+
+    .page-sport-dashboard .add-button {
+        width: 100%;
+    }
+}

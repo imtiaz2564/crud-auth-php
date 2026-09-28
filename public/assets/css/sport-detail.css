@@ -1,83 +1,131 @@
 .page-sport-detail .sport-detail-container {
-        max-width: 900px;
-        margin: 50px auto;
-        padding: 0 20px;
-    }
+    width: min(100% - 40px, 940px);
+    margin: 40px auto 58px;
+}
+
 .page-sport-detail .sport-card {
-        background: white;
-        border-radius: 12px;
-        padding: 40px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    }
+    padding: 38px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow-soft);
+}
+
 .page-sport-detail .sport-title {
-        margin: 0 0 25px;
-        font-size: 36px;
-        color: #1f2937;
-        line-height: 1.2;
-    }
+    max-width: 820px;
+    margin: 0 0 24px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--ink);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+    line-height: 1.05;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+
 .page-sport-detail .sport-image {
-        width: 100%;
-        max-height: 450px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 30px;
-    }
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    margin-bottom: 30px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    object-fit: cover;
+    box-shadow: 0 16px 34px rgba(43, 35, 25, 0.12);
+}
+
 .page-sport-detail .sport-content {
-        font-size: 18px;
-        line-height: 1.8;
-        color: #4b5563;
-        margin-bottom: 35px;
-        overflow-wrap: break-word;
-    }
+    max-width: 760px;
+    margin-bottom: 34px;
+    color: var(--ink-soft);
+    font-size: 18px;
+    line-height: 1.85;
+    overflow-wrap: break-word;
+}
+
+.page-sport-detail .sport-content::first-letter {
+    float: left;
+    padding: 7px 9px 0 0;
+    color: var(--field-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 54px;
+    line-height: 0.85;
+}
+
 .page-sport-detail .sport-actions {
-        display: flex;
-        gap: 12px;
-        padding-top: 20px;
-        border-top: 1px solid #e5e7eb;
-    }
-.page-sport-detail .back-button {
-        display: inline-block;
-        padding: 10px 18px;
-        background-color: #1f2937;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: background-color 0.2s;
-    }
-.page-sport-detail .back-button:hover {
-        background-color: #374151;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+}
+
+.page-sport-detail .back-button,
 .page-sport-detail .edit-button {
-        display: inline-block;
-        padding: 10px 18px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: background-color 0.2s;
-    }
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    font-weight: 900;
+    text-decoration: none;
+    transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.page-sport-detail .back-button {
+    border: 1px solid var(--line-strong);
+    background-color: var(--surface-subtle);
+    color: var(--ink-soft);
+}
+
+.page-sport-detail .back-button:hover {
+    background-color: var(--paper-strong);
+}
+
+.page-sport-detail .edit-button {
+    border: 1px solid var(--field);
+    background-color: var(--field);
+    color: #ffffff;
+}
+
 .page-sport-detail .edit-button:hover {
-        background-color: #0056b3;
-    }
+    background-color: var(--field-dark);
+    border-color: var(--field-dark);
+    transform: translateY(-1px);
+}
+
 .page-sport-detail .no-image {
-        background-color: #f3f4f6;
-        padding: 50px;
-        text-align: center;
-        border-radius: 10px;
-        color: #6b7280;
-        margin-bottom: 30px;
+    margin-bottom: 30px;
+    padding: 56px 20px;
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius);
+    background-color: var(--surface-subtle);
+    color: var(--muted);
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .page-sport-detail .sport-detail-container {
+        width: min(100% - 28px, 940px);
+        margin-top: 28px;
     }
-@media (max-width: 600px) {
-.page-sport-detail .sport-detail-container {
-            margin: 25px auto;
-        }
-.page-sport-detail .sport-card {
-            padding: 25px;
-        }
-.page-sport-detail .sport-title {
-            font-size: 28px;
-        }
-.page-sport-detail .sport-content {
-            font-size: 16px;
-        }
+
+    .page-sport-detail .sport-card {
+        padding: 24px;
     }
+
+    .page-sport-detail .sport-title {
+        font-size: 34px;
+    }
+
+    .page-sport-detail .sport-content {
+        font-size: 16px;
+    }
+
+    .page-sport-detail .sport-actions > * {
+        width: 100%;
+    }
+}
